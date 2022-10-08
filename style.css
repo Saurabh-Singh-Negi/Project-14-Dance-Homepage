@@ -136,12 +136,11 @@ nav {
     width: 400px;
 }
  
-.bottom-section > ul {
+.services-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
-    
+
 } 
 
 .services::before {
@@ -167,12 +166,140 @@ nav {
         display: block;
     }
 
- 
-
     .intro-section {
-        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        left: 0;
+        top: 0;
+        color: #333333;
     }
 
+    .right-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .intro-heading {
+        font-size: 7rem;
+        font-weight: 900;
+    }
+
+    .intro-heading-2 {
+        font-size: 6rem;
+        position: static;
+        left: 0rem;
+        line-height: 3rem;
+    }
+
+    .intro-heading-3 {
+        position: static;
+        left: 0rem;
+        top: 0rem;
+        color: rgba(0, 0, 0, 0.558);
+    }
+
+    .icon, .linkedin {
+        width: 25px;
+        height: 30px;
+    }
+
+    .check-package-btn {
+        text-align: center;
+        margin-right: 0rem;
+    }
+
+    .check-btn {
+        background-color: #333333;
+        padding: 1rem 3rem;
+        color: #f2f2f2;
+        font-size: 1rem;
+    }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .quotes {
+        display: none;
+    }
     
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description-img {
+        width: 400px;
+    }
+     
+    .bottom-section > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    } 
+    
+    .services::before {
+        content: "";
+        border-left: 1px solid black;
+        position: absolute;
+        left: 614px;
+        top: 539px;
+        height: 230px;
+    }
+
+    .down-arrow {
+        height: 60px;
+        padding-top: 1rem;
+        order: 3;
+    }
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }    
+
+
+}
+
+@media screen and (max-width:700px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .logo-img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+    }
 }
 
